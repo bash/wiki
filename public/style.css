@@ -1,0 +1,64 @@
+:root {
+    font-family: sans-serif;
+    line-height: 1.4;
+    --border-color: #e7e1da;
+    --highlight-bg: rgba(0, 0, 0, 2.5%);
+}
+
+@media (prefer-contrast: more) {
+    :root {
+        --border-color: #373737;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --border-color: #2a2a2a;
+        --highlight-bg: rgba(255, 255, 255, 6%);
+    }
+}
+
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+    :root {
+        --border-color: #fff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #1a1a1a;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+}
+
+main,
+header {
+    max-width: 40rem;
+    margin: auto;
+}
+
+header {
+    border-bottom: 1px dotted #808080;
+    margin-bottom: 1em;
+    font-size: smaller;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+}
+
+th {
+    font-weight: 700;
+}
+
+tr:nth-child(2n) td {
+    background-color: var(--highlight-bg);
+}
