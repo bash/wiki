@@ -62,3 +62,7 @@ th {
 tr:nth-child(2n) td {
     background-color: var(--highlight-bg);
 }
+
+code {
+    font-size: inherit;
+}
