@@ -17,6 +17,6 @@ public/%.html: %.md template.html base.html
 
 index.json: $(PAGES)
 	find . -maxdepth 1  -name '*.md' -not -name 'index.md' -type f \
-	   -exec sh -c 'seite "$$1" -T <(echo "{{__tera_context}}") -O - | jq --arg file "$$1" ".file = \$$file"' -- {} \; \
+	   -exec bash -c 'seite "$$1" -T <(echo "{{__tera_context}}") -O - | jq --arg file "$$1" ".file = \$$file"' -- {} \; \
 	   | jq -s . \
 	   > $@
