@@ -1,3 +1,5 @@
+SHELL := /usr/bin/env bash
+
 PAGES := $(wildcard *.md)
 HTML_PAGES := $(patsubst %.md,public/%.html,$(PAGES))
 
@@ -16,4 +18,3 @@ public/index.html: index.md index.html base.html $(PAGES)
 
 public/%.html: %.md template.html base.html
 	seite -T $(word 2,$^) -T $(word 3,$^) $< -O $@
-
