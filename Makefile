@@ -1,5 +1,3 @@
-SHELL := /usr/bin/env bash
-
 PAGES := $(wildcard *.md)
 HTML_PAGES := $(patsubst %.md,public/%.html,$(PAGES))
 
