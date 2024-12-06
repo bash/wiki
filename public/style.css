@@ -64,5 +64,26 @@ tr:nth-child(2n) td {
 }
 
 code {
-    font-size: inherit;
+    /* See: https://www.brunildo.org/test/monospace_fsize.html for why serif is at the end. */
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace, serif;
+}
+
+h2 {
+    font-size: 1.2em;
+    border-bottom: 1px dotted currentColor;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+hr {
+    text-align: center;
+    font-size: 1.6em;
+    border: none;
+
+    &::before {
+        content: "⁂";
+    }
 }

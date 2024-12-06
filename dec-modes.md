@@ -4,6 +4,8 @@ This page tries to list all (DEC) (private) modes that
 are encountered in the wild. \
 These modes can be set using `DECSET` and unset using `DECRST`.
 
+## Modes
+
 | Mode   | Origin       | Description                                                   |
 |-------:|--------------|---------------------------------------------------------------|
 | 1      | DEC          | DECCKM - Cursor Keys Mode                                     |
@@ -215,6 +217,8 @@ These modes can be set using `DECSET` and unset using `DECRST`.
 | 19997  | Kitty        | Handle Ctrl-C/Ctrl-Z mode                                     |
 | 77096  | mintty       | BiDi                                                          |
 | 737769 | foot         | Input Method Editor (IME) mode                                |
+
+## Sources
 
 This table draws from many different sources:
 

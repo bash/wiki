@@ -1,6 +1,6 @@
 # Standard for Dark/Light Preference in Terminals
 
-# Syntax
+## Syntax
 
 <code>**CLITHEME** = ( **"dark"** | **"light"** | **"auto"** ) [ **":"** _modifier_ ]*</code>
 
@@ -13,24 +13,26 @@ The value is interpreted as follows:
 Zero or more modifiers preceded by a **":"** may follow one of the keywords.
 Unrecognized modifiers must be ignored.
 
-# Implementors
-
-## Programs
 <!--
+
+## Implementors
+
+### Programs
+
 ; - delta
 ;   https://dandavison.github.io/delta/
 ; - bat
 ;   https://github.com/sharkdp/bat
--->
 
-## Libraries
+### Libraries
 
 - [terminal-colorsaurus](https://crates.io/crates/terminal-colorsaurus)
 
-# Notes
+-->
+
+## Notes
 
 1. Standard for ANSI Colors in Terminals \
    <https://bixense.com/clicolors/>
 1. Dark and Light Mode detection \
    <http://contour-terminal.org/vt-extensions/color-palette-update-notifications/>
-
