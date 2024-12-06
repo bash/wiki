@@ -1,3 +1,4 @@
+SHELL := bash
 PAGES := $(wildcard *.md)
 HTML_PAGES := $(patsubst %.md,public/%.html,$(PAGES))
 
