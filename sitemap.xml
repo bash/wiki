@@ -3,7 +3,7 @@
     <url>http://wiki.tau.garden</url>
     {%- for page in metadata %}
     <url>
-        <loc>http://wiki.tau.garden/{{page.file | replace(from='.md', to='.html') | replace(from = "./", to = "")}}</loc>
+        <loc>http://wiki.tau.garden/{{page.file | replace(from='.md', to='/') | replace(from = "./", to = "")}}</loc>
     </url>
     {%- endfor %}
 </urlset>

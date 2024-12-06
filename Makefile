@@ -1,11 +1,14 @@
 SHELL := bash
 PAGES := $(wildcard *.md)
-HTML_PAGES := $(patsubst %.md,public/%.html,$(PAGES))
+HTML_PAGES := $(patsubst %.md,public/%/index.html,$(PAGES))
 
-.PHONY: all watch
+.PHONY: all serve
 .INTERMEDIATE: index.json
 
 all: $(HTML_PAGES) public/index.html public/sitemap.xml public/style.css.gz
+
+serve:
+	python3 -m http.server -d public
 
 public/%.gz: public/%
 	gzip --best --keep --force $<
@@ -13,7 +16,8 @@ public/%.gz: public/%
 public/index.html: index.md index.html base.html index.json
 	seite $< -T $(word 2,$^) -T $(word 3,$^) -O $@ --metadata "$$(cat index.json)"
 
-public/%.html: %.md template.html base.html
+public/%/index.html: %.md template.html base.html
+	mkdir -p $(@D)
 	seite -T $(word 2,$^) -T $(word 3,$^) $< -O $@
 
 public/sitemap.xml: sitemap.xml index.json
