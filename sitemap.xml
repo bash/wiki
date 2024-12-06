@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>http://wiki.tau.garden</url>
+    {%- for page in metadata %}
+    <url>
+        <loc>http://wiki.tau.garden/{{page.file | replace(from='.md', to='.html') | replace(from = "./", to = "")}}</loc>
+    </url>
+    {%- endfor %}
+</urlset>
