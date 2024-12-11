@@ -7,7 +7,7 @@ These modes can be set using `DECSET` and unset using `DECRST`.
 ## Modes
 
 | Mode   | Origin       | Description                                                   |
-|-------:|--------------|---------------------------------------------------------------|
+|-------:|:-------------|:--------------------------------------------------------------|
 | 1      | DEC          | DECCKM - Cursor Keys Mode                                     |
 | 2      | DEC          | DECANM - ANSI/VT52 Mode                                       |
 | 3      | DEC          | DECCOLM - Column                                              |

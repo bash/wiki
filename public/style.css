@@ -1,8 +1,13 @@
 :root {
     font-family: sans-serif;
     line-height: 1.4;
-    --border-color: #e7e1da;
+    background-color: var(--background-color);
+    --dark-mode: 0;
+    --background-color: #fff;
+    --border-color: #373737;
     --highlight-color: #ffffbe;
+    --accent-color: #40A02B;
+    --accent-color: oklch(from AccentColor l c h);
 
     @media (prefers-color-scheme: light) {
         color: #1a1a1a;
@@ -13,7 +18,9 @@
     }
 
     @media (prefers-color-scheme: dark) {
-        --border-color: #2a2a2a;
+        --dark-mode: 1;
+        --background-color: #000;
+        --border-color: #606060;
         --highlight-color: #2d2d23;
 
         @media (prefers-contrast: more) {
@@ -44,19 +51,40 @@ header {
 
 table {
     border-collapse: collapse;
+    border: 1px solid light-dark(
+        oklch(from var(--accent-color) 0.7 0.08 h),
+        oklch(from var(--accent-color) 0.3 0.08 h)
+    );
 }
 
 td, th {
-    border: 1px solid var(--border-color);
     padding: 6px 12px;
 }
 
 th {
     font-weight: 700;
+    background-color: light-dark(
+        oklch(from var(--accent-color) 0.8 0.08 h),
+        oklch(from var(--accent-color) 0.2 0.08 h)
+    );
+}
+
+td {
+    border-top: 1px dotted light-dark(
+        oklch(from var(--accent-color) 0.6 0.08 h),
+        oklch(from var(--accent-color) 0.4 0.08 h)
+    );
+    background-color: light-dark(
+        oklch(from var(--accent-color) 0.9 0.05 h),
+        oklch(from var(--accent-color) 0.16 0.05 h)
+    );
 }
 
 tr:nth-child(2n) td {
-    background-color: var(--highlight-bg);
+    background-color: light-dark(
+        oklch(from var(--accent-color) 0.85 0.05 h),
+        oklch(from var(--accent-color) 0.2 0.05 h)
+    );
 }
 
 code {
@@ -100,4 +128,11 @@ hr {
 
 .footnote-definition:target {
     background-color: var(--highlight-color);
+}
+
+a {
+    color: light-dark(
+        oklch(from var(--accent-color) 0.4 c h),
+        oklch(from var(--accent-color) 0.9 min(c, 0.3) h)
+    );
 }
