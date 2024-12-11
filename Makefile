@@ -14,11 +14,13 @@ public/%.gz: public/%
 	gzip --best --keep --force $<
 
 public/index.html: index.md index.html base.html index.json
-	seite $< -T $(word 2,$^) -T $(word 3,$^) -O $@ --metadata "$$(cat index.json)"
+	seite $< -T $(word 2,$^) -T $(word 3,$^) -O $@ \
+		--metadata "$$(cat index.json | jq --arg filename $< '{ "filename": $$filename, "pages": . }')"
 
 public/%/index.html: %.md template.html base.html
 	mkdir -p $(@D)
-	seite -T $(word 2,$^) -T $(word 3,$^) $< -O $@
+	seite -T $(word 2,$^) -T $(word 3,$^) $< -O $@ \
+	   --metadata "$$(jq --null-input --arg filename $< '{ "filename": $$filename }')"
 
 public/sitemap.xml: sitemap.xml index.json
 	seite -T $< <(echo "") --metadata "$$(cat index.json)" -O $@

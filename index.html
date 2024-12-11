@@ -2,7 +2,7 @@
 {% block main %}
 {{content | safe}}
 <ul>
-    {% for page in metadata | sort(attribute="file") %}
+    {% for page in metadata.pages | sort(attribute="file") %}
         <li><a href="{{page.file | replace(from='.md', to='/') | replace(from='./', to='')}}">{{page.title}}</a></li>
     {% endfor %}
 </ul>

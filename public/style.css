@@ -38,13 +38,22 @@
 }
 
 main,
-header {
+header,
+footer {
     max-width: 40rem;
     margin: auto;
 }
 
 header {
     border-bottom: 1px dotted #808080;
+    margin-bottom: 1em;
+    font-size: smaller;
+}
+
+footer {
+    border-top: 1px dotted #808080;
+    padding-top: .5em;
+    margin-top: 2em;
     margin-bottom: 1em;
     font-size: smaller;
 }
