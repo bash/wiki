@@ -145,3 +145,8 @@ a {
         oklch(from var(--accent-color) 0.9 min(c, 0.3) h)
     );
 }
+
+pre {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
