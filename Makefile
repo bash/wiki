@@ -26,7 +26,7 @@ public/sitemap.xml: sitemap.xml index.json
 	seite -T $< <(echo "") --metadata "$$(cat index.json)" -O $@
 
 index.json: $(PAGES)
-	find . -maxdepth 1  -name '*.md' -not -name 'index.md' -type f \
+	find . -maxdepth 1  -name '*.md' -not -name 'index.md' \
 	   -exec bash -c 'seite "$$1" -T <(echo "{{__tera_context}}") -O - | jq --arg file "$$1" ".file = \$$file"' -- {} \; \
 	   | jq -s . \
 	   > $@
