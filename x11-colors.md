@@ -1,3 +1,7 @@
++++
+license = "CC0-1.0"
++++
+
 # X11 Colors in the Terminal
 
 ## Resources

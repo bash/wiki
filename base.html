@@ -12,6 +12,10 @@
     <main>{% block main %}{% endblock %}</main>
     <footer>
         <a href="https://github.com/bash/wiki/edit/main/{{metadata.filename}}">edit this page</a>
+        {%- if frontmatter and frontmatter.license -%}
+            {%- if frontmatter.license == "CC0-1.0" %} · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> 🅭&thinsp;🄍
+            {%- else %}{{ throw(message="unsupported license '" ~ frontmatter.license ~ "'") }}{% endif -%}
+        {%- endif %}
     </footer>
 </body>
 </html>

@@ -1,3 +1,7 @@
++++
+license = "CC0-1.0"
++++
+
 # DEC Modes
 
 This page tries to list all (DEC) (private) modes that
