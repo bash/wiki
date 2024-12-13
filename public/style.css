@@ -1,5 +1,5 @@
 :root {
-    font-family: sans-serif;
+    font-family: sans-serif, CCSymbols;
     line-height: 1.4;
     background-color: var(--background-color);
     --dark-mode: 0;
@@ -31,6 +31,17 @@
     @media (prefers-reduced-motion: no-preference) {
         scroll-behavior: smooth;
     }
+}
+
+/* The CC symbols are not yet widely supported,
+   so let's use this awesome font by Daniel Aleksandersen <https://www.ctrl.blog/entry/creative-commons-unicode-fallback-font.html> */
+@font-face {
+    font-display: swap;
+    font-family: CCSymbols;
+    font-synthesis: none;
+    src: url(CCSymbols.woff2) format(woff2),
+         url(CCSymbols.woff) format(woff);
+    unicode-range: u+a9, u+229c, u+1f10d-1f10f, u+1f16d-1f16f;
 }
 
 ::target-text {
