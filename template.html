@@ -1,4 +1,7 @@
 {% extends "base.html" %}
 {% block main %}
 {{content | safe }}
+{% if frontmatter and frontmatter.redirect_to %}
+    <p>Redirecting to <a href="{{frontmatter.redirect_to}}">{{frontmatter.redirect_to}}</a>&hellip;</p>
+{% endif %}
 {% endblock %}

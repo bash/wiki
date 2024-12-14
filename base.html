@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    {% if frontmatter and frontmatter.redirect_to %}
+        <meta http-equiv="refresh" content="0; url='{{frontmatter.redirect_to}}'" />
+    {% endif %}
     <meta name="color-scheme" content="light dark">
     <title>{{title}}</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
