@@ -17,6 +17,8 @@ jobs:
     - run: sudo mv seite /usr/local/bin/seite
     - run: rm x86_64-unknown-linux-musl.tar.gz
 
+    - run: sudo apt-get install highlight
+
     - name: Build Site
       run: make
 
