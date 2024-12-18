@@ -1,6 +1,6 @@
 SHELL := bash
 SEITE := seite
-PAGES := $(filter-out index.md, $(wildcard *.md))
+PAGES := $(filter-out readme.md, $(wildcard *.md))
 HTML_PAGES := $(patsubst %.md,public/%/index.html,$(PAGES))
 
 .PHONY: all serve
@@ -14,7 +14,7 @@ serve:
 public/%.gz: public/%
 	gzip --best --keep --force $<
 
-public/index.html: index.md templates/index.html templates/base.html index.json
+public/index.html: readme.md templates/index.html templates/base.html index.json
 	$(SEITE) $< -T $(word 2,$^) -T $(word 3,$^) -O $@ \
 		--metadata "$$(cat index.json | jq --arg filename $< '{ "filename": $$filename, "pages": . }')"
 
