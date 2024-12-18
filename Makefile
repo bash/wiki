@@ -1,6 +1,6 @@
 SHELL := bash
 SEITE := seite
-PAGES := $(wildcard *.md)
+PAGES := $(filter-out index.md, $(wildcard *.md))
 HTML_PAGES := $(patsubst %.md,public/%/index.html,$(PAGES))
 
 .PHONY: all serve
@@ -14,20 +14,20 @@ serve:
 public/%.gz: public/%
 	gzip --best --keep --force $<
 
-public/index.html: index.md index.html base.html index.json
+public/index.html: index.md templates/index.html templates/base.html index.json
 	$(SEITE) $< -T $(word 2,$^) -T $(word 3,$^) -O $@ \
 		--metadata "$$(cat index.json | jq --arg filename $< '{ "filename": $$filename, "pages": . }')"
 
-public/%/index.html: %.md template.html base.html
+public/%/index.html: %.md templates/template.html templates/base.html
 	mkdir -p $(@D)
 	$(SEITE) -T $(word 2,$^) -T $(word 3,$^) $< -O $@ \
 	   --metadata "$$(jq --null-input --arg filename $< '{ "filename": $$filename }')" \
 	   --highlight-command 'sh -c '"'"'printf "<pre class=hl><code>" && highlight --syntax "$$1" -O html --fragment && printf "</code></pre>"'"'"' -- {}'
 
-public/sitemap.xml: sitemap.xml index.json
+public/sitemap.xml: templates/sitemap.xml index.json
 	$(SEITE) -T $< <(echo "") --metadata "$$(cat index.json)" -O $@
 
-index.json: $(filter-out index.md, $(PAGES))
+index.json: $(PAGES)
 	echo "$^" \
 		| xargs -n1 bash -c '$(SEITE) "$$1" -T <(echo "{{__tera_context}}") -O - | jq --arg file "$$1" ".file = \$$file"' -- \
 		| jq -s . \
