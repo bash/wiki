@@ -38,6 +38,22 @@ The value is interpreted as follows:
 
 Unrecognized values are treated the same as **"auto"**.
 
+## How To Implement
+
+```python
+import os, sys
+
+def cli_theme():
+    theme_with_mod = os.environ.get('CLITHEME') or 'auto'
+    theme = theme_with_mod.split(':')[0]
+    if theme == 'dark' or theme == 'light':
+        return theme
+    elif sys.stdout.isatty():
+        return detect_cli_theme()
+    else:
+        return 'dark'
+```
+
 ## Issues
 
 * systemd (for `run0`): todo

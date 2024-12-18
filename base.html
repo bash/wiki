@@ -8,6 +8,10 @@
     {% endif %}
     <meta name="color-scheme" content="light dark">
     <title>{{title}}</title>
+    {%- if has_highlighted_code %}
+    <link rel="stylesheet" type="text/css" href="/syntax-dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" type="text/css" href="/syntax-light.css" media="(prefers-color-scheme: light)">
+    {% endif -%}
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>

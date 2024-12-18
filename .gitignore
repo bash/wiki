@@ -1,3 +1,4 @@
 public/*.gz
 public/*.xml
 public/**/*.html
+public/syntax-*.css
