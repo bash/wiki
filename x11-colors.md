@@ -120,9 +120,3 @@ Survey of the format used by terminals in response to `OSC 10` / `OSC 11` querie
 [vte-src]: https://gitlab.gnome.org/GNOME/vte/-/blob/86074ccede977bf2a594b781821c4a80c0343872/src/vtetypes.cc#L48
 [vte-src-2]: https://gitlab.gnome.org/GNOME/vte/-/blob/86074ccede977bf2a594b781821c4a80c0343872/src/vteseq.cc#L1388
 
-
-## Questions
-* [Terminology]: [Responses to Queries for the Foreground and Background Color Use Different Format][terminology-issue]
-
-[terminology]: https://git.enlightenment.org/enlightenment/terminology
-[terminology-issue]: https://git.enlightenment.org/enlightenment/terminology/issues/14

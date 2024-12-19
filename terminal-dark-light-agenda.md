@@ -14,6 +14,9 @@ This page is a place for me to collect links / resources and have a direct jumpi
 * (PR) [delta]: [Detect Dark/Light Mode from Terminal][delta-pr]
 * (PR) [bat]: [Choose Theme Based on The Terminal's Color Scheme](https://github.com/sharkdp/bat/pull/2896)
 * (PR) [zed]: [terminal: Retain relative order of responses](https://github.com/zed-industries/zed/pull/16456)
+* (PR) [lazygit]: [Set the `TERM` env variable](https://github.com/jesseduffield/lazygit/pull/3420)
+* (PR) [terminology]: [Unify format of responses to OSC 10 and OSC 11 / 12 queries](https://git.enlightenment.org/enlightenment/terminology/pulls/15)
+* (Issue) [cosmic-term]: [Terminal reports incorrect background color](https://github.com/pop-os/cosmic-term/issues/391)
 
 [bat]: https://github.com/sharkdp/bat
 [delta]: https://github.com/dandavison/delta
@@ -23,3 +26,6 @@ This page is a place for me to collect links / resources and have a direct jumpi
 [terminal-trx]: https://github.com/bash/terminal-trx
 [Continuous Color Reporting]: https://github.com/bash/continuous-color-reporting
 [dec-modes]: /dec-modes
+[lazygit]: https://github.com/jesseduffield/lazygit
+[terminology]: http://www.enlightenment.org/about-terminology
+[cosmic-term]: https://github.com/pop-os/cosmic-term
