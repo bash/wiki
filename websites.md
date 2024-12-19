@@ -21,3 +21,4 @@ rad. When I grow up I want to look like one of these ^^
 * <https://flatpak.github.io/xdg-desktop-portal/>
 * <https://www.piratepx.com/>
 * <https://kobold60.com/>
+* <https://departuremono.com/>
