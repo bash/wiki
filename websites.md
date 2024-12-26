@@ -23,3 +23,5 @@ rad. When I grow up I want to look like one of these ^^
 * <https://kobold60.com/>
 * <https://departuremono.com/>
 * <https://symbol.fediverse.info/>
+* <https://bragefuglseth.dev/>
+* <https://tobiasbernard.com/>
