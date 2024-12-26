@@ -281,6 +281,7 @@ of links useful. They point to man pages or source code files that show a termin
 * [VT100 User Manual](https://vt100.net/docs/vt100-ug/chapter3.html)
 * [screen](https://git.savannah.gnu.org/cgit/screen.git/tree/src/ansi.c)
 * [tmux](https://github.com/tmux/tmux/blob/3823fa2c577d440649a84af660e4d3b0c095d248/input.c#L1771)
+* [Ghostty](https://github.com/ghostty-org/ghostty/blob/4b4d4062dfed7b37424c7210d1230242c709e990/src/terminal/modes.zig#L197)
 
 </details>
 
