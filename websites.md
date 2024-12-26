@@ -22,3 +22,4 @@ rad. When I grow up I want to look like one of these ^^
 * <https://www.piratepx.com/>
 * <https://kobold60.com/>
 * <https://departuremono.com/>
+* <https://symbol.fediverse.info/>
