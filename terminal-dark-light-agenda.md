@@ -17,6 +17,7 @@ This page is a place for me to collect links / resources and have a direct jumpi
 * (PR) [lazygit]: [Set the `TERM` env variable](https://github.com/jesseduffield/lazygit/pull/3420)
 * (PR) [terminology]: [Unify format of responses to OSC 10 and OSC 11 / 12 queries](https://git.enlightenment.org/enlightenment/terminology/pulls/15)
 * (Issue) [cosmic-term]: [Terminal reports incorrect background color](https://github.com/pop-os/cosmic-term/issues/391)
+* (PR) [contour]: [docs: Add adoption state for dark/light mode notifications](https://github.com/contour-terminal/contour/pull/1678)
 
 [bat]: https://github.com/sharkdp/bat
 [delta]: https://github.com/dandavison/delta
@@ -29,3 +30,4 @@ This page is a place for me to collect links / resources and have a direct jumpi
 [lazygit]: https://github.com/jesseduffield/lazygit
 [terminology]: http://www.enlightenment.org/about-terminology
 [cosmic-term]: https://github.com/pop-os/cosmic-term
+[contour]: https://github.com/contour-terminal/contour
