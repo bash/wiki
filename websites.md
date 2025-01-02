@@ -25,3 +25,4 @@ rad. When I grow up I want to look like one of these ^^
 * <https://symbol.fediverse.info/>
 * <https://bragefuglseth.dev/>
 * <https://tobiasbernard.com/>
+* <https://geopjr.dev/>
