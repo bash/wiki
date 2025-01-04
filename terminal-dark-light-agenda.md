@@ -6,6 +6,7 @@ This page is a place for me to collect links / resources and have a direct jumpi
 
 ## Products
 * [terminal-colorsaurus]: A Rust library that answers the question "Is this terminal dark or light?".
+* [xterm-color]: A Rust library that parses the color specs returned by terminals in response to OSC queries.
 * [terminal-trx]: A Rust library that provides a readable and writable handle to the current tty.
 * [Continuous Color Reporting]: Specification for an extension to OSC 4, 10...19 for continously receiving updates when the color changes.
 * [Exhaustive List of DEC Modes][dec-modes]: An exhaustive list of all DEC (private) modes that are encountered in the wild.
@@ -33,3 +34,4 @@ This page is a place for me to collect links / resources and have a direct jumpi
 [cosmic-term]: https://github.com/pop-os/cosmic-term
 [contour]: https://github.com/contour-terminal/contour
 [tabby]: https://tabby.sh/
+[xterm-color]: https://docs.rs/xterm-color
