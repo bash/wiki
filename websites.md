@@ -29,3 +29,4 @@ rad. When I grow up I want to look like one of these ^^
 * <https://volpeon.ink>
 * <https://webring.floof.company/>
 * <https://fediring.net/>
+* <https://lotte.chir.rs/>
