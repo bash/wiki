@@ -30,3 +30,5 @@ rad. When I grow up I want to look like one of these ^^
 * <https://webring.floof.company/>
 * <https://fediring.net/>
 * <https://lotte.chir.rs/>
+* <https://arch.dog>
+* <https://maia.crimew.gay>
