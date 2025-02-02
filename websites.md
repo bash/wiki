@@ -32,3 +32,9 @@ rad. When I grow up I want to look like one of these ^^
 * <https://lotte.chir.rs/>
 * <https://arch.dog>
 * <https://maia.crimew.gay>
+* <https://yesterweb.org/>
+* <https://starshines.gay/>
+* <https://elke.cafe/>
+* <https://tuxedodragon.art>
+* <https://www.5snb.club/>
+* <https://beeps.website>
