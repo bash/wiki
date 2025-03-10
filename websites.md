@@ -38,3 +38,4 @@ rad. When I grow up I want to look like one of these ^^
 * <https://tuxedodragon.art>
 * <https://www.5snb.club/>
 * <https://beeps.website>
+* <https://pancakes.gay/>
