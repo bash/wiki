@@ -40,3 +40,4 @@ rad. When I grow up I want to look like one of these ^^
 * <https://beeps.website>
 * <https://pancakes.gay/>
 * <https://keithhacks.cyou/>
+* <https://lmnt.me/>
