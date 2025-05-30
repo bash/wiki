@@ -1,5 +1,5 @@
 :root {
-    font-family: sans-serif, CCSymbols;
+    font-family: system-ui, sans-serif, CCSymbols;
     line-height: 1.4;
     background-color: var(--background-color);
     --dark-mode: 0;
